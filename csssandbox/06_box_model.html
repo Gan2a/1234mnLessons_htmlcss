@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model/margin and padding</title>
+    <style>
+        /* CSS reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            background-color: #f4f4f4;
+            border: 50px #777 solid;
+            height: 300px;
+            width: 1000px;
+            /* padding all sides */
+            padding: 50px;
+            padding: 10px 20px 30px 40px;
+            /* margin on all sides */
+            margin: 20px;
+        }
+        .box p {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Хайрцаг нэг</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, corrupti sit. Odio odit, hic porro facere voluptate quis alias cum?</p>
+    </div>
+    <div class="box">
+        <h3>Хайрцаг хоёр</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, corrupti sit. Odio odit, hic porro facere voluptate quis alias cum?</p>
+    </div>
+</body>
+</html>
