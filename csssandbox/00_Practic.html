@@ -4,35 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    <title>Practic</title>
+    <title>Practic 11</title>
     <style>
         body{
-            background-color: aqua;
+            height: 5000px;
         }
-        #about{
-            color: azure;
-            font-family: 'Rubik Bubbles', cursive;
-            background-color: bisque;
-            background: url(./img/stars.jpg) no-repeat center center/cover;
-            height: 500px;
-            width: 500px;
+        .box{
+            width: 50px;
+            height: 50px;
+            border: solid;
+            border-radius: 10px;
         }
-        #main{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            font-style: oblique;
+        #subbox{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+            background-color: rgb(192, 206, 192);
+            width: 300px;
+            height: 300px;
+        }
+        #box-1{
+            background-color: red;
+        }
+        #box-2{
+            background-color: orange;
+        }
+        #box-3{
+            background-color: green;
+        }
+        #box-4{
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+            background-color: blue;
+        }
+        #box-5{
+            position: fixed;
+            background-color: purple;
         }
     </style>
 </head>
 <body>
-    <div id="about">
-        <h2 >Танилцуулга</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum et, beatae animi velit reiciendis odit dolorum itaque, porro possimus reprehenderit, laudantium voluptatibus quisquam? Repellat, sint nulla quia libero aliquam voluptates.</p>
+    <div id="box-1" class="box"></div>
+
+    <div id="subbox">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
     </div>
-    <div id="main">
-        <h2>Сэдэв 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus enim at possimus nulla libero reiciendis ipsa! Voluptatibus atque explicabo architecto voluptas animi eveniet? Iste distinctio nisi voluptatem ullam doloribus a quasi rem, delectus error provident sunt, possimus nesciunt ratione!</p>
-    </div>
+
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
 </body>
 </html>
